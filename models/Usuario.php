@@ -1,9 +1,9 @@
 <?php
   class Usuario{
-    private $nome;
-    private $login;
-    private $email;
-    private $senha;
+    var $nome;
+    var $login;
+    var $email;
+    var $senha;
 
     public function __construct($nome, $login, $email, $senha){
       $this->nome = htmlspecialchars($nome);

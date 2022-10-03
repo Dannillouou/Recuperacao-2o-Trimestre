@@ -25,7 +25,7 @@
     <input type="password" name="senha">
     <input type="submit" value="Cadastrar">
 
-   </form>
+  </form>
 
 </body>
 </html>

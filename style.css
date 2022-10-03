@@ -8,5 +8,5 @@ body{
 }
 
 #mensagemErroLogin{
-  color: --var(cor-fonte-mensagem-erro);
+  color: var(cor-fonte-mensagem-erro);
 }

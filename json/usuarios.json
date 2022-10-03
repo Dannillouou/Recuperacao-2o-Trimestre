@@ -1,3 +1,20 @@
 [
-  
+    {
+        "nome": "daniel",
+        "login": "daniel",
+        "email": "daniel@daniel",
+        "senha": "12345"
+    },
+    {
+        "nome": "bigas",
+        "login": "bigas",
+        "email": "bigas@bigas",
+        "senha": "bigas"
+    },
+    {
+        "nome": "beijas",
+        "login": "beijas",
+        "email": "beijas@biejas",
+        "senha": "beijas"
+    }
 ]
