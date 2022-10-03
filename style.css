@@ -1,0 +1,12 @@
+:root{
+  --cor-fonte-mensagem-erro: red;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+#mensagemErroLogin{
+  color: --var(cor-fonte-mensagem-erro);
+}
