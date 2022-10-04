@@ -1,5 +1,6 @@
 <?php 
 class Exercicio{
+  private $aluno;
   private $nomeExercicio;
   private $grupoMuscular;
   private $carga;

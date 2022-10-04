@@ -28,5 +28,3 @@
             header("Location: home.php");
         }
     }
-
-?>

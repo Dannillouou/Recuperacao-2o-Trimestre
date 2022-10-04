@@ -1,25 +1,29 @@
 <?php
 
-//Mensagens de aviso no caso de erro ou de usuário ja cadastrado
+  //Mensagens de aviso/notificação no caso de erro ou de usuário ja cadastrado
   if (isset($_GET['usuarioJaCadastrado'])) {
-    $erro = true;
-    $mensagemDeErro = "Usuario já cadastrado";
+    $temMensagem = true;
+    $mensagem = "Usuario já cadastrado";
   } 
   else if (isset($_GET['usuarioCadastrado'])) {
-    $erro = true;
-    $mensagemDeErro = "Usuario cadastrado com sucesso!";
+    $temMensagem = true;
+    $mensagem = "Usuario cadastrado com sucesso!";
   }
   else if (isset($_GET['loginInvalido'])) {
-    $erro = true;
-    $mensagemDeErro = "Login invalido!";
+    $temMensagem = true;
+    $mensagem = "Login invalido!";
   }
   else if (isset($_GET['usuarioInvalido'])) {
-    $erro = true;
-    $mensagemDeErro = "Usuario Invalido!";
+    $temMensagem = true;
+    $mensagem = "Usuario Invalido!";
   }
   else if (isset($_GET['senhaELoginInvalidos'])) {
-    $erro = true;
-    $mensagemDeErro = "Senha e login Inválidos!";
+    $temMensagem = true;
+    $mensagem = "Senha e login Inválidos!";
+  }
+  else if(isset($_GET['desconectado'])){
+    $temMensagem = true;
+    $mensagem = "Desconectado com sucesso";
   }
 ?>
 
@@ -38,7 +42,8 @@
 
   <body>
 
-    <?php if (isset($erro)) echo "<h1 class=\"mensagemErroLogin\">$mensagemDeErro</h1>" ?>
+    <!--h1 só existira se houver mensagem para ser impressa-->
+    <?php if (isset($temMensagem)) echo "<h1 class=\"mensagemErroLogin\">$mensagem</h1>" ?>
 
     <form action="login.php" method="post">
 

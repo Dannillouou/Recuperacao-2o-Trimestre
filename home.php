@@ -1,4 +1,7 @@
 <!--Se divirta Hannah-->
+<?php
+  include "partials/VerificaSessaoExistente.inc";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
