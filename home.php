@@ -15,5 +15,6 @@
 </head>
 <body>
     <h1>Pagina principal</h1>
+    <a href="logout.php">Fazer logout</a>
 </body>
 </html>
