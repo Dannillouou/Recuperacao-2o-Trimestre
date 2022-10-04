@@ -1,5 +1,8 @@
 <?php
 
+  if(isset($_SESSION['user']))
+    header('Location: home.php');
+
   //Mensagens de aviso/notificação no caso de erro ou de usuário ja cadastrado
   if (isset($_GET['usuarioJaCadastrado'])) {
     $temMensagem = true;
