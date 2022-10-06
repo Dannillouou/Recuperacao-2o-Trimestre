@@ -1,8 +1,14 @@
 <?php
   
-  if(!isset($_POST['exercicioCadastrado'])){
+  //codigo que verifica se há uma sessão em andamento sempre que as paginas do site são acessadas
+  session_start();
+  if(!isset($_SESSION['user'])){
+    header('Location: index.php?sessaoNaoIniciada=true');
+  }
+  
+  if(isset($_POST['exercicioCadastrado'])){
     $temMensagem = true;
-    $mensagem = "Aluno já cadastrado";
+    $mensagem = "Exercício cadastrado com sucesso!";
   }
 
 ?>

@@ -31,7 +31,7 @@
     <?php if (isset($temMensagem)) echo "<h1>$mensagem</h1>" ?>
 
     <a href="logout.php">Fazer logout</a>
-    <a href="cadastrarFicha.php">Cadastrar ficha</a>
+    <a href="cadastrarFicha.php">Cadastrar exercício em ficha</a>
 
 </body>
 </html>

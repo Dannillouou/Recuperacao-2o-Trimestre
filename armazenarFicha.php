@@ -11,7 +11,7 @@
     $arquivoDecodificado = json_decode(file_get_contents($arquivoFichas));
 
     function VerificaExistenciaFicha($arquivoDecodificado, $identificadorFicha, $aluno){
-      if(!isset($arquivoDecodificado)) return true;
+      if(!isset($arquivoDecodificado)) return false;
 
       //não podem haver duas fichas com os mesmos identificadores/nomes e mesmo aluno
       foreach($arquivoDecodificado as $ficha){
@@ -25,7 +25,6 @@
       //decodificando e transformando conteudo do arquivo em array
       $arquivoDecodificado = json_decode(file_get_contents($arquivoFichas));
       $conteudoArquivo = $arquivoDecodificado;
-      array($conteudoArquivo);
       //adicionando ficha no arquivo
       array($conteudoArquivo);
       array_push($conteudoArquivo, $dados);
@@ -33,16 +32,17 @@
     }
 
     //Informações sobre o exercício
-    $nomeExercicio = $_GET['nomeExercicio'];
-    $grupoMuscular = $_GET['musculo'];
-    $carga = $_GET['carga'];
-    $repeticoes = $_GET['repeticoes'];
-    $series = $_GET['series'];
+    $nomeExercicio = $_POST['nomeExercicio'];
+    $grupoMuscular = $_POST['musculo'];
+    $carga = $_POST['carga'];
+    $repeticoes = $_POST['repeticoes'];
+    $series = $_POST['series'];
     
     $novoExercicio = new Exercicio($nomeExercicio, $grupoMuscular, $carga, $repeticoes, $series);
+    echo "$novoExercicio->nomeExercicio";
 
     //Informações sobre a ficha
-    $identificadorFicha = $_GET['ficha'];
+    $identificadorFicha = $_POST['ficha'];
 
     //Verificando se a ficha já não existe
     $fichaExiste = VerificaExistenciaFicha($arquivoDecodificado, $identificadorFicha, $alunoAtual);
