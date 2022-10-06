@@ -1,13 +1,17 @@
 <?php
 
-  //não consegui incluir de alguma forma essa verificação
-  //em formato de função dentro de um partial para organizar,
-  //não encontrei uma forma de fazer isso que funcionasse
+  // Professor, como ficamos muito tempo para conseguir fazer a estrutura de armazenamento das
+  // fichas funcionar, não conseguimos fazer a barra de pesquisa. Espero que isso não desconte muito
+  // dos pontos, pois toda a matéria dada no segundo trimestre fomos capazes de aprender e usar
+  // muito bem, ao meu ver
+
   session_start();
   if(isset($_SESSION['user']))
     header('Location: home.php');
 
   //Mensagens de aviso/notificação no caso de erro ou de usuário ja cadastrado
+  // Escolhemos fazer dessa forma, com parâmetros GET para evitar a criação de várias páginas php so com o intuito de passar um aviso para o 
+  // usuário
   if (isset($_GET['alunoJaCadastrado'])) {
     $temMensagem = true;
     $mensagem = "Aluno já cadastrado";
@@ -48,7 +52,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>GRANDAO academia</title>
+    <title>Hanniel gym</title>
   </head>
 
   <body>

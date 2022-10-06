@@ -1,3 +1,38 @@
 [
-  
+    {
+        "__PHP_Incomplete_Class_Name": "Ficha",
+        "aluno": "abelha",
+        "identificadorFicha": "ficha1",
+        "numeroExercicios": 1,
+        "exercicios": [
+            {
+                "__PHP_Incomplete_Class_Name": "Exercicio",
+                "nomeExercicio": "remada",
+                "grupoMuscular": "coaisdfj",
+                "carga": "09809",
+                "repeticoes": "0980",
+                "series": "98",
+                "descanso": "098"
+            }
+        ],
+        "identficadorFicha": "ficha1"
+    },
+    {
+        "__PHP_Incomplete_Class_Name": "Ficha",
+        "aluno": "abelha",
+        "identificadorFicha": "ficha1",
+        "numeroExercicios": 1,
+        "exercicios": [
+            {
+                "__PHP_Incomplete_Class_Name": "Exercicio",
+                "nomeExercicio": "kljsdfklj",
+                "grupoMuscular": "klsjdafkl",
+                "carga": "09809",
+                "repeticoes": "09809",
+                "series": "0980",
+                "descanso": "9098"
+            }
+        ],
+        "identficadorFicha": "ficha1"
+    }
 ]

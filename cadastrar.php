@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>GRANDAO academia</title>
+  <title>Hanniel gym</title>
 
 </head>
 <body>

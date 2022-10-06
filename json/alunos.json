@@ -16,5 +16,11 @@
         "login": "beijas",
         "email": "beijas@biejas",
         "senha": "beijas"
+    },
+    {
+        "nome": "abelha",
+        "login": "abelha",
+        "email": "abelha@abelha",
+        "senha": "12345"
     }
 ]
